@@ -1,5 +1,12 @@
 # CHANGE LOG
 
+## 1.1 (2022-04-21)
+
+1. Fixed command for phpcbf in php_lint.php
+2. Updated config file for ESLint
+3. Added folder to scan for ESLint (assets/controllers)
+
+
 ## 1.0 (2022-04-17)
 
 1. Installed the following linters
