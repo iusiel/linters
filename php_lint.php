@@ -1,6 +1,6 @@
 <?php
 
-shell_exec("php phar/phpcbf.phar");
+shell_exec("php linters/phpcbf.phar --standard=linters/phpcs.xml");
 
 $separator = "================".PHP_EOL.PHP_EOL;
 
