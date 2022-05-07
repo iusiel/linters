@@ -6,7 +6,7 @@ $separator = "================".PHP_EOL.PHP_EOL;
 
 $pieces = [
     "PHP Codesniffer Result".PHP_EOL,
-    shell_exec("php linters/phpcs.phar --standard=linters/phpcs.xml").PHP_EOL,
+    shell_exec("php linters/phpcs.phar -s --standard=linters/phpcs.xml").PHP_EOL,
     $separator,
     "PHP Mess Detector".PHP_EOL,
     shell_exec("php linters/phpmd.phar src text linters/ruleset.xml").PHP_EOL,

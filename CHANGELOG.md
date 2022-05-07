@@ -1,5 +1,8 @@
 # CHANGE LOG
 
+## 1.2 (2022-05-07)
+
+1. Fixed -s to phpcs command in php_lint.php so that sniff will be displayed on report
 ## 1.1 (2022-04-21)
 
 1. Fixed command for phpcbf in php_lint.php
