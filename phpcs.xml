@@ -3,7 +3,7 @@
     <description>Custom PHPCS Config File</description>
 
     <!-- include folder in testing -->
-    <file>../src</file>
+    <file>../app</file>
 
     <arg name="extensions" value="php" />
 

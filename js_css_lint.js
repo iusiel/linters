@@ -3,7 +3,7 @@ const { exec } = require('child_process');
 const cssReportFile = `linters/reports/css_report.txt`;
 const jsReportFile = `linters/reports/js_report.txt`;
 
-exec('npx stylelint assets/styles/ --config linters/.stylelintrc', function (err, stdout, stderr) {
+exec('npx stylelint resources/css/ --config linters/.stylelintrc', function (err, stdout, stderr) {
     let cssReportNumberOfLines;
     let jsReportNumberOfLines;
     
@@ -18,7 +18,7 @@ exec('npx stylelint assets/styles/ --config linters/.stylelintrc', function (err
         if (err) throw (err);
 
         // callback hell. execute eslint after writing to css_report.txt
-        exec('npx eslint assets/app.js assets/js assets/controllers -c linters/.eslintrc.json --ext .js,.vue --fix', function (err, stdout, stderr) {
+        exec('npx eslint resources/js -c linters/.eslintrc.json --ext .js,.vue --fix', function (err, stdout, stderr) {
     
             let content = `ESLint report
                 ${stdout}

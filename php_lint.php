@@ -9,13 +9,13 @@ $pieces = [
     shell_exec("php linters/phpcs.phar -s --standard=linters/phpcs.xml").PHP_EOL,
     $separator,
     "PHP Mess Detector".PHP_EOL,
-    shell_exec("php linters/phpmd.phar src text linters/ruleset.xml").PHP_EOL,
+    shell_exec("php linters/phpmd.phar app text linters/ruleset.xml").PHP_EOL,
     $separator,
     "PHP Copy Paste Detector".PHP_EOL,
-    shell_exec("php linters/phpcpd.phar src").PHP_EOL,
+    shell_exec("php linters/phpcpd.phar app").PHP_EOL,
     $separator,  
     "PHP Magic Number Detector".PHP_EOL,
-    shell_exec("linters/vendor/bin/phpmnd src").PHP_EOL,
+    shell_exec("linters/vendor/bin/phpmnd app").PHP_EOL,
     $separator,  
 ];
 
